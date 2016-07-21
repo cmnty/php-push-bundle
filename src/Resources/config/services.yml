@@ -1,0 +1,25 @@
+services:
+    cmnty_push.service_registry:
+        class: Cmnty\Push\PushServiceRegistry
+        public: false
+
+    cmnty_push.service.google:
+        class: Cmnty\Push\GooglePushService
+        public: false
+    cmnty_push.service.mozilla:
+        class: Cmnty\Push\MozillaPushService
+        public: false
+
+    cmnty_push.service.aggregate:
+        class: Cmnty\Push\AggregatePushService
+        public: false
+        arguments:
+            - "@cmnty_push.service_registry"
+
+    cmnty_push.service:
+        alias: cmnty_push.service.aggregate
+
+    cmnty_push.client:
+        class: Cmnty\Push\Client
+        arguments:
+            - "@cmnty_push.service"

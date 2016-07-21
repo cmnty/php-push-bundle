@@ -1,0 +1,21 @@
+{
+    "name": "cmnty/push-bundle",
+    "description": "Symfony Bundle for cmnty/push",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan de Ruijter",
+            "email": "johan@cmnty.com"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+        "cmnty/push": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cmnty\\PushBundle\\": "src"
+        }
+    }
+}
