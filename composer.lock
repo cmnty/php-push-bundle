@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "165cbe3b7366b8efc432b5704a15c4c7",
-    "content-hash": "3f058190a8645db7e78e03fbbdd23ac2",
+    "hash": "e72a3211e11978981fd841167e9c1fef",
+    "content-hash": "f2656c0a4de22846f3c2df1fd09a12fd",
     "packages": [
         {
             "name": "cmnty/push",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cmnty/php-push.git",
-                "reference": "4581c72a72708eeddbbebbddd35ecd359cc0f050"
+                "reference": "9f756d92add516d8cef2751764457c2dcd2c266d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cmnty/php-push/zipball/4581c72a72708eeddbbebbddd35ecd359cc0f050",
-                "reference": "4581c72a72708eeddbbebbddd35ecd359cc0f050",
+                "url": "https://api.github.com/repos/cmnty/php-push/zipball/9f756d92add516d8cef2751764457c2dcd2c266d",
+                "reference": "9f756d92add516d8cef2751764457c2dcd2c266d",
                 "shasum": ""
             },
             "require": {
@@ -29,6 +29,11 @@
                 "spomky-labs/base64url": "~1.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Cmnty\\Push\\": "src"
@@ -45,7 +50,16 @@
                 }
             ],
             "description": "Web Push library for PHP",
-            "time": "2016-07-20 21:29:08"
+            "keywords": [
+                "Push API",
+                "Web Push",
+                "Web Push API",
+                "notifications",
+                "push",
+                "push messages",
+                "push notifications"
+            ],
+            "time": "2016-08-02 21:52:53"
         },
         {
             "name": "fgrosse/phpasn1",
