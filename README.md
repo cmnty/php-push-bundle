@@ -64,9 +64,9 @@ $client->pushNotification($notification, $subscription);
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/cmnty/push.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/cmnty/push-bundle.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/cmnty/push.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/cmnty/push-bundle.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/cmnty/push-bundle
 [link-downloads]: https://packagist.org/packages/cmnty/push-bundle
