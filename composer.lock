@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e72a3211e11978981fd841167e9c1fef",
-    "content-hash": "f2656c0a4de22846f3c2df1fd09a12fd",
+    "hash": "eb0b3a8add55876a1fad6b54ef41fb73",
+    "content-hash": "3395e037c46d9182b8f45d9d7310cedb",
     "packages": [
         {
             "name": "cmnty/push",
-            "version": "dev-master",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cmnty/php-push.git",
-                "reference": "9f756d92add516d8cef2751764457c2dcd2c266d"
+                "reference": "7faab82bdcf83c32a042908f234fde2fc826e7e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cmnty/php-push/zipball/9f756d92add516d8cef2751764457c2dcd2c266d",
-                "reference": "9f756d92add516d8cef2751764457c2dcd2c266d",
+                "url": "https://api.github.com/repos/cmnty/php-push/zipball/7faab82bdcf83c32a042908f234fde2fc826e7e7",
+                "reference": "7faab82bdcf83c32a042908f234fde2fc826e7e7",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
                 "push messages",
                 "push notifications"
             ],
-            "time": "2016-08-02 21:52:53"
+            "time": "2016-09-07 08:18:03"
         },
         {
             "name": "fgrosse/phpasn1",
@@ -417,16 +417,16 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "shasum": ""
             },
             "require": {
@@ -454,6 +454,7 @@
                 }
             ],
             "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
             "keywords": [
                 "http",
                 "http-message",
@@ -462,7 +463,7 @@
                 "request",
                 "response"
             ],
-            "time": "2015-05-04 20:22:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "spomky-labs/base64url",
@@ -520,9 +521,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "cmnty/push": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
