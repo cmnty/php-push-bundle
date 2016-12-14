@@ -38,17 +38,39 @@ cmnty_push:
             enabled: true # Default true
 ```
 
+If you plan on storing the push subscriptions using doctrine, you can use the provided mappings by this bundle.
+```yaml
+# Doctrine Configuration
+doctrine:
+    dbal:
+        types:
+            binary_string: Cmnty\PushBundle\Doctrine\Type\BinaryStringType
+    orm:
+        mappings:
+            PushSubscription:
+                type: xml
+                prefix: Cmnty\Push
+                dir: "%kernel.root_dir%/../vendor/cmnty/push-bundle/src/Resources/config/embeddable"
+                is_bundle: false
+```
+
 ## Usage
 
 ```php
-use Cmnty\Push\Crypto\AuthenticationTag;
+<?php
+
+use Cmnty\Push\Crypto\AuthenticationSecret;
 use Cmnty\Push\Crypto\PublicKey;
 use Cmnty\Push\EndPoint;
 use Cmnty\Push\Notification;
 use Cmnty\Push\Subscription;
 
-$notification = new Notification('Hello', 'World!');
-$subscription = new Subscription(new Endpoint('...'), new PublicKey('...'), new AuthenticationTag('...'));
+$notification = new Notification('Hello', 'Symfony!');
+$subscription = new Subscription(
+    new Endpoint('...'),
+    new PublicKey::createFromBase64UrlEncodedString('...'),
+    new AuthenticationSecret::createFromBase64UrlEncodedString('...')
+);
 
 $client = $this->get('cmnty_push.client');
 $client->pushNotification($notification, $subscription);
