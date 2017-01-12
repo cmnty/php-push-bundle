@@ -1,6 +1,7 @@
 {
     "name": "cmnty/push-bundle",
     "description": "Symfony Bundle for cmnty/push",
+    "keywords": ["Notifications", "Push Notifications", "Push Messages", "Push", "Web Push", "Web Push API", "Push API"],
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -16,6 +17,12 @@
         "symfony/dependency-injection": "~2.8|~3.0",
         "symfony/config": "~2.8|~3.0",
         "symfony/yaml": "~2.8|~3.0"
+    },
+    "require-dev": {
+        "doctrine/orm": "~2.5"
+    },
+    "suggest": {
+        "doctrine/orm": "Needed to store subscriptions using doctrine"
     },
     "autoload": {
         "psr-4": {
